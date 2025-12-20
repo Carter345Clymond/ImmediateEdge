@@ -1,0 +1,17 @@
+/*
+  Localizable.strings (German)
+  ImmediateEdgeApp
+*/
+
+/* Placeholders for German localization */
+"app.name" = "Immediate Edge";
+"app.subtitle" = "Geschwindigkeitslesetrainer";
+"ok" = "OK";
+"cancel" = "Abbrechen";
+"done" = "Fertig";
+"next" = "Weiter";
+"tab.home" = "Start";
+"tab.train" = "Training";
+"tab.progress" = "Fortschritt";
+"tab.library" = "Bibliothek";
+"tab.profile" = "Profil";

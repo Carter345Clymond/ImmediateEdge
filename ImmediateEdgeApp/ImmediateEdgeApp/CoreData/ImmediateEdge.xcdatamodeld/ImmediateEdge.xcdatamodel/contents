@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="UserProfileEntity" representedClassName="UserProfileEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="NO" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="username" optional="NO" attributeType="String" defaultValueString="Reader"/>
+        <attribute name="createdAt" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="language" optional="NO" attributeType="String" defaultValueString="en"/>
+        <attribute name="currentStreak" optional="NO" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="longestStreak" optional="NO" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lastTrainingDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="theme" optional="NO" attributeType="String" defaultValueString="system"/>
+        <attribute name="fontSize" optional="NO" attributeType="String" defaultValueString="medium"/>
+        <attribute name="fontFamily" optional="NO" attributeType="String" defaultValueString="System"/>
+        <attribute name="defaultExerciseDuration" optional="NO" attributeType="Integer 32" defaultValueString="5" usesScalarValueType="YES"/>
+        <attribute name="preferredDifficulty" optional="NO" attributeType="String" defaultValueString="intermediate"/>
+        <attribute name="notificationsEnabled" optional="NO" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="reminderTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="reminderDays" optional="YES" attributeType="String"/>
+        <relationship name="sessions" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="TrainingSessionEntity" inverseName="user" inverseEntity="TrainingSessionEntity"/>
+        <relationship name="achievements" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="AchievementEntity" inverseName="user" inverseEntity="AchievementEntity"/>
+    </entity>
+    <entity name="TrainingSessionEntity" representedClassName="TrainingSessionEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="NO" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="date" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="type" optional="NO" attributeType="String"/>
+        <attribute name="duration" optional="NO" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="wordsRead" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="wpm" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="comprehensionScore" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="speed" optional="YES" attributeType="Integer 32" usesScalarValueType="YES"/>
+        <attribute name="chunkSize" optional="YES" attributeType="Integer 32" usesScalarValueType="YES"/>
+        <attribute name="difficulty" optional="YES" attributeType="String"/>
+        <attribute name="textId" optional="YES" attributeType="String"/>
+        <relationship name="user" optional="NO" maxCount="1" deletionRule="Nullify" destinationEntity="UserProfileEntity" inverseName="sessions" inverseEntity="UserProfileEntity"/>
+    </entity>
+    <entity name="AchievementEntity" representedClassName="AchievementEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="NO" attributeType="String"/>
+        <attribute name="nameKey" optional="NO" attributeType="String"/>
+        <attribute name="descriptionKey" optional="NO" attributeType="String"/>
+        <attribute name="iconName" optional="NO" attributeType="String"/>
+        <attribute name="category" optional="NO" attributeType="String"/>
+        <attribute name="requirementType" optional="NO" attributeType="String"/>
+        <attribute name="targetValue" optional="NO" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="currentValue" optional="NO" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isUnlocked" optional="NO" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="unlockedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="user" optional="NO" maxCount="1" deletionRule="Nullify" destinationEntity="UserProfileEntity" inverseName="achievements" inverseEntity="UserProfileEntity"/>
+    </entity>
+    <entity name="TextProgressEntity" representedClassName="TextProgressEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="NO" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="textId" optional="NO" attributeType="String"/>
+        <attribute name="isRead" optional="NO" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="lastReadDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="readCount" optional="NO" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="bookmarked" optional="NO" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+    </entity>
+</model>

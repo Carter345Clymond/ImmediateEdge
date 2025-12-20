@@ -1,0 +1,17 @@
+/*
+  Localizable.strings (French)
+  ImmediateEdgeApp
+*/
+
+/* Placeholders for French localization */
+"app.name" = "Immediate Edge";
+"app.subtitle" = "Entraîneur de Lecture Rapide";
+"ok" = "OK";
+"cancel" = "Annuler";
+"done" = "Terminé";
+"next" = "Suivant";
+"tab.home" = "Accueil";
+"tab.train" = "Entraînement";
+"tab.progress" = "Progrès";
+"tab.library" = "Bibliothèque";
+"tab.profile" = "Profil";

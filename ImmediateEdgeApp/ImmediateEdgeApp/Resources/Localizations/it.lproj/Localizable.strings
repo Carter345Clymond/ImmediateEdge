@@ -1,0 +1,17 @@
+/*
+  Localizable.strings (Italian)
+  ImmediateEdgeApp
+*/
+
+/* Placeholders for Italian localization */
+"app.name" = "Immediate Edge";
+"app.subtitle" = "Allenatore di Lettura Veloce";
+"ok" = "OK";
+"cancel" = "Annulla";
+"done" = "Fatto";
+"next" = "Avanti";
+"tab.home" = "Home";
+"tab.train" = "Allenamento";
+"tab.progress" = "Progresso";
+"tab.library" = "Biblioteca";
+"tab.profile" = "Profilo";

@@ -1,0 +1,75 @@
+workflows:
+  ios-release:
+    name: iOS Release - Immediate Edge
+    instance_type: mac_mini_m2
+    max_build_duration: 120
+
+    integrations:
+      app_store_connect: Codemagic
+
+    environment:
+      ios_signing:
+        distribution_type: app_store
+        bundle_identifier: com.immediateedge.edgeimme.speedreadingimmed
+      vars:
+        XCODE_PROJECT: "Immediate Edge - Speed Reading.xcodeproj"
+        XCODE_SCHEME: "ImmediateEdgeApp"
+        BUNDLE_ID: "com.immediateedge.edgeimme.speedreadingimmed"
+      xcode: latest
+
+    scripts:
+      - name: Fetch signing files
+        script: |
+          app-store-connect fetch-signing-files "$BUNDLE_ID" \
+            --type IOS_APP_STORE \
+            --create
+
+      - name: Set up keychain
+        script: |
+          keychain initialize
+
+      - name: Add certificates to keychain
+        script: |
+          keychain add-certificates
+
+      - name: Set up code signing settings
+        script: |
+          xcode-project use-profiles
+
+      - name: Increment build number
+        script: |
+          cd $CM_BUILD_DIR
+          LATEST_BUILD=$(app-store-connect get-latest-app-store-build-number "$BUNDLE_ID" || echo "0")
+          NEW_BUILD=$((LATEST_BUILD + 1))
+          echo "Setting build number to $NEW_BUILD"
+          agvtool new-version -all $NEW_BUILD
+
+      - name: Build IPA
+        script: |
+          cd $CM_BUILD_DIR
+          xcode-project build-ipa \
+            --project "$XCODE_PROJECT" \
+            --scheme "$XCODE_SCHEME" \
+            --config "Release" \
+            --archive-flags="-destination 'generic/platform=iOS'"
+
+    artifacts:
+      - build/ios/ipa/*.ipa
+      - /tmp/xcodebuild_logs/*.log
+      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
+
+    publishing:
+      email:
+        recipients:
+          - ${CM_EMAIL}
+        notify:
+          success: true
+          failure: true
+
+      app_store_connect:
+        auth: integration
+        submit_to_testflight: true
+        submit_to_app_store: true
+        cancel_previous_submissions: true
+        release_type: AFTER_APPROVAL
+        phased_release: true

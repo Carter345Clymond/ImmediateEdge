@@ -1,0 +1,333 @@
+/*
+  Localizable.strings (English)
+  ImmediateEdgeApp
+*/
+
+/* MARK: - General */
+"buttonOK" = "OK";
+"buttonCancel" = "Cancel";
+"buttonDone" = "Done";
+"buttonNext" = "Next";
+"buttonBack" = "Back";
+"buttonSkip" = "Skip";
+"buttonStart" = "Start";
+"buttonContinue" = "Continue";
+"buttonSave" = "Save";
+"buttonDelete" = "Delete";
+"buttonEdit" = "Edit";
+"buttonClose" = "Close";
+
+/* MARK: - Onboarding */
+"onboardingWelcomeTitle" = "Welcome to Immediate Edge";
+"onboardingWelcomeSubtitle" = "Revolutionize your reading. Learn faster, remember more, and unlock your brain's full potential with science-proven techniques.";
+"buttonBeginJourney" = "Start My Transformation";
+
+"onboardingSlide1Title" = "Triple Your Reading Speed";
+"onboardingSlide1Description" = "Imagine reading a book in one hour instead of three. Our neuroscience-based training helps you process information 3x faster while maintaining full comprehension.";
+
+"onboardingSlide2Title" = "Remember Everything You Read";
+"onboardingSlide2Description" = "Stop forgetting what you just read. Master advanced retention techniques that help your brain absorb and recall information effortlessly.";
+
+"onboardingSlide3Title" = "See Your Progress Daily";
+"onboardingSlide3Description" = "Track every improvement with detailed analytics. Watch your reading speed climb, your comprehension soar, and your knowledge expand day by day.";
+"buttonDiscoverSpeed" = "Discover My Potential";
+
+/* MARK: - Initial Test */
+"initialTestTitle" = "Discover Your Reading Superpower";
+"initialTestInstructions" = "Read naturally at your own pace - no pressure, just be yourself";
+"initialTestInstructionsDetail" = "We'll measure your baseline speed and comprehension to create a personalized training journey designed specifically for you";
+"buttonFinishReading" = "Ready for Results";
+
+/* MARK: - Profile Creation */
+"profileCreationTitle" = "Let's Customize Your Journey";
+"profileUsernameLabel" = "What should we call you?";
+"profileUsernamePlaceholder" = "Your name";
+"profileGoalLabel" = "What matters most to you?";
+"profileGoalSpeed" = "Speed - Read More in Less Time";
+"profileGoalComprehension" = "Retention - Remember Everything";
+"profileGoalBoth" = "Both - Become a Reading Master";
+"profileDifficultyLabel" = "How would you rate your reading?";
+"profileInterestsLabel" = "What do you love reading about?";
+"buttonCompleteSetup" = "Begin My Training";
+
+/* MARK: - Home Screen */
+"homeTitle" = "Your Reading Evolution";
+"homeSpeedLabel" = "Current Speed";
+"homeComprehensionLabel" = "Retention Rate";
+"homeStreakLabel" = "Daily Streak";
+"homeSessionsLabel" = "Sessions Completed";
+"buttonStartTraining" = "Continue Training";
+"buttonPracticeReading" = "Free Practice";
+"buttonTestSpeed" = "Challenge Myself";
+"buttonViewAnalytics" = "See My Progress";
+"homeWordsPerMinuteLabel" = "words per minute";
+
+/* MARK: - Navigation */
+"navHome" = "Home";
+"navTrain" = "Train";
+"navProgress" = "Progress";
+"navLibrary" = "Library";
+"navProfile" = "Profile";
+
+/* MARK: - Training Selection */
+"trainingSelectionTitle" = "Choose Your Power-Up";
+"trainingRSVPName" = "Flash Reading";
+"trainingRSVPDescription" = "Words flash one by one in the center. Train your eyes to process text at incredible speed without moving.";
+"trainingSchulteName" = "Peripheral Vision";
+"trainingSchulteDescription" = "Number grid exercise to expand your side vision. Learn to see entire lines instead of single words.";
+"trainingChunkingName" = "Phrase Reading";
+"trainingChunkingDescription" = "Read multiple words at once as a single unit. Train your brain to recognize whole phrases instantly.";
+"trainingEstimatedTime" = "%d-%d min";
+
+/* MARK: - Exercise Settings */
+"settingSpeed" = "Speed";
+"settingDuration" = "Duration";
+"settingDifficulty" = "Difficulty";
+"settingFontSize" = "Font Size";
+"settingChunkSize" = "Chunk Size";
+"settingWordsPerDisplay" = "Words Per Display";
+
+/* MARK: - Difficulty Levels */
+"difficultyBeginner" = "Beginner";
+"difficultyIntermediate" = "Intermediate";
+"difficultyAdvanced" = "Advanced";
+"difficultyEasy" = "Starter (5x5)";
+"difficultyMedium" = "Advanced (7x7)";
+"difficultyHard" = "Expert (Mixed)";
+"difficultyTitle" = "Challenge Level";
+
+/* MARK: - Results */
+"resultsTitle" = "Results";
+"resultsWPMLabel" = "WPM";
+"resultsComprehensionLabel" = "Comprehension";
+"resultsWordsReadLabel" = "Words Read";
+"resultsTimeLabel" = "Time";
+"buttonTryAgain" = "Try Again";
+"resultsImprovementLabel" = "Improvement";
+
+/* MARK: - Library */
+"libraryTitle" = "Reading Library";
+"librarySearchPlaceholder" = "Search for topics...";
+"buttonFilterCategory" = "Filter by Category";
+"libraryCategoryAll" = "All Topics";
+"libraryWordCountFormat" = "%d words";
+"libraryReadingTimeFormat" = "%d min";
+
+/* MARK: - Categories */
+"categoryBusiness" = "Business";
+"categoryScience" = "Science";
+"categoryHistory" = "History";
+"categoryPsychology" = "Psychology";
+"categoryLiterature" = "Literature";
+
+/* MARK: - Reading */
+"buttonBookmark" = "Bookmark";
+"readingSettingsTitle" = "Reading Settings";
+"buttonMarkAsRead" = "Mark as Read";
+"buttonTakeComprehensionTest" = "Take Comprehension Test";
+"buttonSkipTest" = "Skip Test";
+"settingFontFamily" = "Font Family";
+"settingLineSpacing" = "Line Spacing";
+"settingTheme" = "Theme";
+"buttonFinish" = "I'm Done Reading";
+"readingCompleteTitle" = "Great Job!";
+"readingSummaryFormat" = "You processed %d words in %@";
+"readingTestPrompt" = "Ready to test your comprehension?";
+"readingSpeedLabel" = "Your Speed";
+"readingTimeLabel" = "Time Invested";
+
+/* MARK: - Statistics */
+"statisticsTitle" = "Your Progress";
+"statisticsOverviewLabel" = "Performance Overview";
+"statisticsSpeedGrowthLabel" = "Speed Growth";
+"statisticsComprehensionTrendLabel" = "Comprehension Trend";
+"statisticsCalendarLabel" = "Training Calendar";
+"statisticsSessionsCompletedLabel" = "Sessions Completed";
+"statisticsWordsProcessedLabel" = "Words Processed";
+"statisticsTotalTimeLabel" = "Time Invested";
+"statisticsPeakSpeedLabel" = "Peak Speed";
+"statisticsAvgComprehensionLabel" = "Avg. Comprehension";
+"buttonExportData" = "Export My Data";
+"statisticsTimeRangeWeek" = "Week";
+"statisticsTimeRangeMonth" = "Month";
+"statisticsTimeRangeAllTime" = "All Time";
+
+/* MARK: - Achievements */
+"achievementsTitle" = "Hall of Fame";
+"achievementsEarnedLabel" = "Earned";
+"achievementsLockedLabel" = "Locked";
+"achievementsProgressLabel" = "Progress";
+"achievementsEarnedOnFormat" = "Earned on %@";
+
+/* Achievement Names */
+"achievementFirstStepsName" = "Journey Begins";
+"achievementFirstStepsDesc" = "Complete your first training session";
+"achievementSpeedReaderName" = "Rising Star";
+"achievementSpeedReaderDesc" = "Complete 10 training sessions";
+"achievementDedicatedLearnerName" = "Committed Reader";
+"achievementDedicatedLearnerDesc" = "Complete 50 training sessions";
+"achievementSpeedMasterName" = "Speed Master";
+"achievementSpeedMasterDesc" = "Complete 100 training sessions";
+
+"achievementFastReaderName" = "Quick Mind";
+"achievementFastReaderDesc" = "Reach 300 words per minute";
+"achievementSuperSpeedyName" = "Speed Demon";
+"achievementSuperSpeedyDesc" = "Reach 400 words per minute";
+"achievementLightningFastName" = "Lightning Reader";
+"achievementLightningFastDesc" = "Reach 500 words per minute";
+"achievementUnstoppableSpeedName" = "Unstoppable Force";
+"achievementUnstoppableSpeedDesc" = "Reach 600 words per minute";
+
+"achievementGoodUnderstandingName" = "Sharp Mind";
+"achievementGoodUnderstandingDesc" = "Score 80%+ comprehension 5 times";
+"achievementGreatComprehensionName" = "Master Comprehender";
+"achievementGreatComprehensionDesc" = "Score 90%+ comprehension 5 times";
+"achievementPerfectScoreName" = "Flawless Victory";
+"achievementPerfectScoreDesc" = "Score 100% comprehension";
+
+"achievementBookWormName" = "Word Warrior";
+"achievementBookWormDesc" = "Process 10,000 words";
+"achievementAvidReaderName" = "Reading Machine";
+"achievementAvidReaderDesc" = "Process 50,000 words";
+"achievementReadingChampionName" = "Champion Reader";
+"achievementReadingChampionDesc" = "Process 100,000 words";
+"achievementLibraryMasterName" = "Library Conqueror";
+"achievementLibraryMasterDesc" = "Complete all library texts";
+
+"achievementWeekWarriorName" = "7-Day Champion";
+"achievementWeekWarriorDesc" = "Train for 7 consecutive days";
+"achievementMonthMasterName" = "30-Day Legend";
+"achievementMonthMasterDesc" = "Train for 30 consecutive days";
+"achievementUnstoppableStreakName" = "Unstoppable";
+"achievementUnstoppableStreakDesc" = "Train for 100 consecutive days";
+
+"achievementExplorerName" = "Technique Explorer";
+"achievementExplorerDesc" = "Try all training exercises";
+"achievementWellRoundedName" = "Renaissance Reader";
+"achievementWellRoundedDesc" = "Read from every category";
+
+/* MARK: - Profile */
+"profileTitle" = "Profile";
+"profileMemberSinceFormat" = "Member since %@";
+"profilePreferencesTitle" = "Preferences";
+"profileLanguageLabel" = "Language";
+"profileAppearanceLabel" = "Appearance";
+"profileThemeLight" = "Light";
+"profileThemeDark" = "Dark";
+"profileThemeSystem" = "System";
+"profileNotificationsLabel" = "Notifications";
+"profileDailyReminderLabel" = "Daily Reminder";
+"profileReminderTimeLabel" = "Reminder Time";
+"profileAppInfoTitle" = "App Information";
+"profileVersionLabel" = "Version";
+"profileAboutLabel" = "About";
+"profilePrivacyPolicyLabel" = "Privacy Policy";
+"profileTermsOfServiceLabel" = "Terms of Service";
+"buttonContactSupport" = "Contact Support";
+"buttonRateApp" = "Rate App";
+"profileDataManagementTitle" = "Data Management";
+"buttonResetStatistics" = "Reset Statistics";
+"buttonDeleteAccount" = "Delete Account";
+
+/* MARK: - Notifications */
+"notificationDailyReminderMessage" = "Your daily training awaits! Let's improve your reading speed today.";
+"notificationStreakReminderFormat" = "You're on fire! Keep your %d-day streak alive.";
+"notificationAchievementUnlockedFormat" = "🏆 Achievement Unlocked: %@";
+
+/* MARK: - Errors */
+"errorGenericMessage" = "Something went wrong. Please try again.";
+"errorNoDataMessage" = "No data available";
+"errorLoadingFailedMessage" = "Failed to load data";
+"errorSaveFailedMessage" = "Failed to save data";
+
+/* MARK: - Confirmation */
+"confirmResetStatsTitle" = "Reset Statistics?";
+"confirmResetStatsMessage" = "This will delete all your progress data. This action cannot be undone.";
+"confirmDeleteAccountTitle" = "Delete Account?";
+"confirmDeleteAccountMessage" = "This will permanently delete your account and all data. This action cannot be undone.";
+
+/* MARK: - RSVP Training */
+"rsvpSettingsTitle" = "Flash Reading (RSVP)";
+"rsvpSettingsSubtitle" = "Words appear one by one in the center of the screen. Train your brain to read at lightning speed without moving your eyes";
+"rsvpSettingSpeedLabel" = "Display Speed";
+"rsvpSettingWordsPerDisplayLabel" = "Words Per Flash";
+"buttonBeginExercise" = "Begin Exercise";
+"trainingPausedLabel" = "Paused";
+"buttonResumeTraining" = "Continue";
+"buttonExitTraining" = "Exit Training";
+"trainingCompleteMessage" = "Excellent Work!";
+"trainingWordsReadLabel" = "Words Processed";
+"trainingAverageSpeedLabel" = "Your Speed";
+"trainingTimeSpentLabel" = "Training Time";
+"trainingComprehensionRateLabel" = "Comprehension Rate";
+"buttonTrainAgain" = "Train Again";
+"trainingKeepPracticingMessage" = "You're making progress! Keep going.";
+"trainingDurationLabel" = "Session Length";
+
+/* MARK: - Schulte Tables */
+"schulteSettingsTitle" = "Schulte Tables";
+"schulteSettingsSubtitle" = "Number grid exercise to expand side vision. See entire lines at once instead of reading word by word - this is the secret of speed readers";
+"schulteRoundsLabel" = "Training Rounds";
+"schulteHowToTitle" = "How It Works";
+"schulteInstructionsText" = "Tap numbers in order (1, 2, 3...) while keeping your eyes fixed on the center dot. This trains your peripheral vision to see and recognize objects without directly looking at them.";
+"schulteAverageTimeLabel" = "Average Time";
+"schulteBestTimeLabel" = "Best Time";
+"schulteIncorrectTapsLabel" = "Mistakes";
+"schulteRoundDetailsTitle" = "Performance Breakdown";
+"schulteAccuracyLabel" = "Accuracy";
+
+/* MARK: - Chunking Practice */
+"chunkingSettingsTitle" = "Phrase Reading (Chunking)";
+"chunkingSettingsSubtitle" = "Learn to read 3-5 words at once as a single unit. Like seeing a picture instead of separate letters - this multiplies your reading speed";
+"chunkingChunkSizeSetting" = "Words Per Group";
+"chunkingHowToTitle" = "How It Works";
+"chunkingInstructionsText" = "Text highlights move across the screen in groups of words. Train your brain to recognize entire phrases instantly, not individual words. This is how professional speed readers process information.";
+"chunkingGroupsReadLabel" = "Groups Processed";
+"chunkingGroupSizeLabel" = "Group Size";
+"chunkingHighlightSpeedSetting" = "Highlight Speed";
+"chunkingNextStepsTitle" = "Recommended Next Steps";
+"speedSlow" = "Gentle";
+"speedModerate" = "Moderate";
+"speedFast" = "Brisk";
+"speedVeryFast" = "Lightning";
+
+/* MARK: - Font Sizes */
+"fontSizeSmall" = "Small";
+"fontSizeMedium" = "Medium";
+"fontSizeLarge" = "Large";
+
+/* MARK: - Common Units */
+"unitWord" = "word";
+"unitWords" = "words";
+"unitChunk" = "Chunk";
+"unitRound" = "Round";
+"unitRounds" = "rounds";
+
+/* MARK: - Motivational Messages */
+"motivationExcellentMessage" = "Outstanding! Your speed is improving!";
+"motivationGreatMessage" = "Great work! Keep up the momentum!";
+"motivationGoodMessage" = "Good job! Consistency is key.";
+"motivationKeepGoingMessage" = "You're making progress! Don't stop now.";
+
+"motivationMilestone300Message" = "Amazing! You've reached 300 WPM!";
+"motivationMilestone400Message" = "Incredible! 400 WPM achieved!";
+"motivationMilestone500Message" = "Phenomenal! You're at 500 WPM!";
+"motivationMilestone600Message" = "Extraordinary! 600 WPM - You're a speed reading master!";
+
+"motivationComprehensionHighMessage" = "Perfect balance of speed and comprehension!";
+"motivationComprehensionMediumMessage" = "Good comprehension! Keep practicing.";
+"motivationComprehensionLowMessage" = "Try slowing down slightly to improve comprehension.";
+
+"motivationStreak3Message" = "3 days strong! You're building a habit.";
+"motivationStreak7Message" = "One week streak! You're on fire!";
+"motivationStreak30Message" = "30 days! You're a reading champion!";
+"motivationStreak100Message" = "100 days! Absolutely unstoppable!";
+
+"motivationTipRSVPMessage" = "Pro tip: Relax your eyes and let the words come to you.";
+"motivationTipSchulteMessage" = "Pro tip: Keep your focus on the center, trust your peripheral vision.";
+"motivationTipChunkingMessage" = "Pro tip: Try to visualize each chunk as a single image.";
+"motivationTipGeneralMessage" = "Pro tip: Practice daily for just 10 minutes to see dramatic improvements.";
+
+"motivationImprovementUpFormat" = "↑ %d WPM improvement! Keep it up!";
+"motivationImprovementSteadyMessage" = "Maintaining steady progress!";
+"motivationImprovementDownMessage" = "No worries, consistency beats perfection.";

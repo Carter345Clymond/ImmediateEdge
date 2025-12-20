@@ -1,0 +1,5 @@
+# Exclude
+ImmediateEdgeLegal/
+.DS_Store
+*.png
+README.md

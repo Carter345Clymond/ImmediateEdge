@@ -1,0 +1,17 @@
+/*
+  Localizable.strings (Spanish)
+  ImmediateEdgeApp
+*/
+
+/* Placeholders for Spanish localization */
+"app.name" = "Immediate Edge";
+"app.subtitle" = "Entrenador de Lectura Rápida";
+"ok" = "OK";
+"cancel" = "Cancelar";
+"done" = "Hecho";
+"next" = "Siguiente";
+"tab.home" = "Inicio";
+"tab.train" = "Entrenar";
+"tab.progress" = "Progreso";
+"tab.library" = "Biblioteca";
+"tab.profile" = "Perfil";
