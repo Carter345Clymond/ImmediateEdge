@@ -22,7 +22,15 @@ workflows:
           xcode-project use-profiles
       - name: Increment build number
         script: |
-          agvtool new-version -all $(($(app-store-connect get-latest-testflight-build-number "$BUNDLE_ID") + 1))
+          cd "$CM_BUILD_DIR"
+          LATEST_BUILD=$(app-store-connect get-latest-testflight-build-number "$BUNDLE_ID" 2>/dev/null || echo "0")
+          if [ -z "$LATEST_BUILD" ]; then
+            LATEST_BUILD=0
+          fi
+          NEW_BUILD=$((LATEST_BUILD + 1))
+          echo "Latest TestFlight build: $LATEST_BUILD"
+          echo "Setting new build number: $NEW_BUILD"
+          agvtool new-version -all "$NEW_BUILD"
       - name: Build IPA
         script: |
           xcode-project build-ipa \
