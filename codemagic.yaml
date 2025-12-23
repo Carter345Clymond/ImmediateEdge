@@ -23,10 +23,15 @@ workflows:
       - name: Increment build number
         script: |
           cd "$CM_BUILD_DIR"
-          LATEST_BUILD=$(app-store-connect get-latest-testflight-build-number "$BUNDLE_ID" 2>/dev/null || echo "0")
-          if [ -z "$LATEST_BUILD" ]; then
-            LATEST_BUILD=0
+
+          # Try to get latest build from TestFlight
+          LATEST_BUILD=$(app-store-connect get-latest-testflight-build-number "$BUNDLE_ID" 2>/dev/null || echo "")
+
+          # If empty or 0, use fallback minimum of 1 (since version 1 already exists in TestFlight)
+          if [ -z "$LATEST_BUILD" ] || [ "$LATEST_BUILD" = "0" ]; then
+            LATEST_BUILD=1
           fi
+
           NEW_BUILD=$((LATEST_BUILD + 1))
           echo "Latest TestFlight build: $LATEST_BUILD"
           echo "Setting new build number: $NEW_BUILD"
